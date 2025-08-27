@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Spain - AI Immigration Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container" style="position: relative;">
+        <div class="logo">
+            <img src="logo.png" alt="Enter Spain Logo">
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://rubenoskam.com/" target="_blank">Main Site</a></li>
+            </ul>
+            <!-- Hamburger Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <div class="container">
+        <h1>Welcome to Enter Spain</h1>
+        <p>Your AI-powered assistant for moving to Spain. Ask about visas, banking, housing, healthcare, and more. We’ll connect you to our trusted partners when you’re ready.</p>
+        <button class="cta-button" onclick="document.querySelector('#chat').scrollIntoView({behavior: 'smooth'})">
+            Start Chatting with AI
+        </button>
+    </div>
+</section>
+
+<!-- Chat Section -->
+<section id="chat" class="chat-section">
+    <div class="container">
+        <h2>Chat with Enter Spain AI</h2>
+        <p>Ask me anything about moving to Spain — from documents to housing, banking, and healthcare. I’ll provide general info and connect you with our partners when you’re ready.</p>
+
+        <!-- Example Questions -->
+        <ul class="example-questions">
+            <li>What documents do I need for a residence permit in Spain?</li>
+            <li>How can I open a bank account as an expat?</li>
+            <li>Are there special visas for digital nomads?</li>
+            <li>How do I get healthcare access as a non-EU citizen?</li>
+            <li>Can you explain options for renting or buying housing?</li>
+        </ul>
+
+        <!-- Chat Widget -->
+        <div id="chat-widget" class="chat-widget">
+            <div id="chat-messages" class="chat-messages">
+                <div class="chat-message ai">👋 Hola! I’m your Spain AI guide. What would you like to know?</div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your question...">
+                <button id="send-btn">Send</button>
+            </div>
+
+            <!-- Disclaimer -->
+            <p class="chat-disclaimer">
+                ⚠️ Our AI assistant provides general information only. For personalized legal or financial advice, consult a qualified expert.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>
+            At Enter Spain, our mission is simple: **make your move to Spain easy, stress-free, and personalized**.
+            With over <strong>1,500 clients served</strong> and representing more than <strong>30 nationalities</strong>, our experience speaks for itself.
+        </p>
+        <p>
+            Founded by Ruben Oskam, our boutique team combines deep local knowledge with a proactive approach. Whether you're relocating for work, retirement, or investment, we handle everything—from immigration and banking to housing and healthcare—so you can focus on settling in, not paperwork.
+        </p>
+        <p>
+            We connect you with trusted partners in real estate, insurance, banking, and accounting, crafting tailored solutions that align with your personal needs and ensure smooth transitions.
+        </p>
+        <button class="about-cta" onclick="document.querySelector('#chat').scrollIntoView({behavior: 'smooth'})">
+            Start Your Journey
+        </button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Enter Spain. All rights reserved. <a href="/privacy">Privacy Policy</a></p>
+        <div class="partners">
+            <img src="partner1.png" alt="Real Estate Partner">
+            <img src="partner2.png" alt="Insurance Partner">
+            <img src="partner3.png" alt="Banking Partner">
+            <img src="partner4.png" alt="Accounting Partner">
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
