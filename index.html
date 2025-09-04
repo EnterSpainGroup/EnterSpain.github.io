@@ -1,86 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Enter Spain – AI Immigration Assistant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enter Spain — AI Immigration Assistant</title>
+    <meta name="description" content="Enter Spain: AI assistant for visas, housing, banking and relocation to Spain." />
+    <meta name="theme-color" content="#004080">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header -->
-<header>
-    <div class="container">
-        <div class="logo"><img src="logo.png" alt="Enter Spain Logo"></div>
-        <nav>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#home" class="brand">
+            <img src="logo.png" alt="Enter Spain logo" class="brand-img" />
+            <span class="brand-name">Enter Spain</span>
+        </a>
+        <nav class="nav">
             <ul id="nav-menu">
                 <li><a href="#chat">Chat</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="https://rubenoskam.com/" target="_blank" rel="noopener">Main Site</a></li>
             </ul>
-            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <div id="hamburger" class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
         </nav>
     </div>
 </header>
 
-<!-- Hero -->
+<!-- HERO -->
 <section id="home" class="hero">
-    <div class="container">
-        <h1>Welcome to Enter Spain</h1>
-        <p>Your AI-powered assistant for moving to Spain. Ask about visas, banking, housing, healthcare, and more. We’ll connect you to our trusted partners when you're ready.</p>
-        <button class="cta-button" onclick="document.querySelector('#chat').scrollIntoView({ behavior: 'smooth' })">
-            Start Chatting with AI
-        </button>
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <h1>Move to Spain with confidence ask our AI assistant</h1>
+            <p class="lead">Visas, banking, housing, healthcare and more. Ask in plain English and get concrete next steps. Powered by Enter Spain.</p>
+            <div class="cta-row">
+                <a href="#chat" class="btn primary">Start Chat</a>
+                <a class="btn ghost" href="#about">About Us</a>
+            </div>
+            <ul class="chips">
+                <li class="chip">Digital Nomad Visa</li>
+                <li class="chip">NIE & Empadronamiento</li>
+                <li class="chip">Bank accounts</li>
+                <li class="chip">Health insurance</li>
+            </ul>
+        </div>
+        <aside class="hero-panel">
+            <div class="glass-card preview">
+                <div class="preview-head"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+                <div class="preview-body">
+                    <div class="msg ai">¡Hola! I'm your Enter Spain AI Agent. Ask me anything about moving to Spain.</div>
+                    <div class="msg user">What do I need for the Digital Nomad Visa?</div>
+                    <div class="msg ai">I can guide you through eligibility, documents, timing, and where to apply step by step.</div>
+                </div>
+            </div>
+        </aside>
     </div>
 </section>
 
-<!-- Chat Section -->
+<!-- CHAT (Chatbase only) -->
 <section id="chat" class="chat-section">
     <div class="container">
-        <h2>Chat with Enter Spain AI</h2>
-        <p>Ask me anything about moving to Spain—from documents to housing, banking, and healthcare. I’ll provide general info and connect you with our partners when you’re ready.</p>
-        <iframe
-                src="https://www.chatbase.co/chatbot-iframe/-vJaFq68V2voQ9sYyst01"
-                width="100%"
-                height="auto"
-                loading="lazy"
-                class="chat-iframe"
-                style="min-height: 600px;"
-                frameborder="0"
-                aria-label="Enter Spain AI chat"
-        ></iframe>
+        <div class="chat-top">
+            <h2>Chat with Enter Spain AI</h2>
+            <p class="muted">Ask about visas, housing, banking, and settling in Spain. Our Chatbase-powered assistant is here to help 24/7.</p>
+        </div>
+        <div class="iframe-wrap">
+            <iframe src="https://www.chatbase.co/chatbot-iframe/-vJaFq68V2voQ9sYyst01" width="100%" height="700" loading="lazy" frameborder="0" aria-label="Chatbase chatbot"></iframe>
+        </div>
     </div>
 </section>
 
-<!-- About Section -->
+<!-- ABOUT -->
 <section id="about" class="about">
     <div class="container">
         <h2>About Us</h2>
         <p>At Enter Spain, our mission is simple: <strong>make your move to Spain easy, stress-free, and personalized</strong>. With over <strong>1,500 clients served</strong> from more than <strong>30 nationalities</strong>, our experience speaks for itself.</p>
-        <p>Founded by Ruben Oskam, our boutique team combines deep local knowledge with a proactive approach. Whether you’re relocating for work, retirement, or investment, we handle everything—from immigration and banking to housing and healthcare—so you can focus on settling in, not paperwork.</p>
-        <p>We connect you with trusted partners in real estate, insurance, banking, and accounting, crafting tailored solutions that align with your personal needs and ensure smooth transitions.</p>
-        <button class="about-cta" onclick="document.querySelector('#chat').scrollIntoView({ behavior: 'smooth' })">
-            Start Your Journey
-        </button>
+        <p>Founded by Ruben Oskam, our boutique team combines deep local knowledge with a proactive approach. Whether you're relocating for work, retirement, or investment, we handle everything—from immigration and banking to housing and healthcare—so you can focus on settling in, not paperwork.</p>
+        <a href="#chat" class="about-cta">Start Your Journey</a>
     </div>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-    <div class="container">
-        <p>&copy; 2025 Enter Spain. All rights reserved. <a href="/privacy">Privacy Policy</a></p>
-        <div class="partners">
-            <img src="partner1.png" alt="Real Estate Partner">
-            <img src="partner2.png" alt="Insurance Partner">
-            <img src="partner3.png" alt="Banking Partner">
-            <img src="partner4.png" alt="Accounting Partner">
+    <div class="container footer-inner">
+        <div class="foot-brand">
+            <img src="logo.png" alt="Enter Spain" class="foot-logo" />
+            <div>
+                <div class="brand-name">Enter Spain</div>
+                <div class="sub muted">AI immigration & relocation assistant</div>
+            </div>
         </div>
+        <div class="foot-links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="mailto:hello@enterspain.ai">Contact</a>
+        </div>
+        <div class="foot-copy">© <span id="year"></span> Enter Spain. All rights reserved.</div>
     </div>
 </footer>
 
-<!-- JS -->
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>
